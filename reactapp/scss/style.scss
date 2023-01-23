@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+@import"https://fonts.googleapis.com/css?family=Poppins";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+:root {
+	--comfortaa: 'Comfortaa', cursive;
+	--redressed: 'Redressed', cursive;
+  
+  --dark: #1c1c1c;
+  --light: #c4c4c4;
+  --teal: #008080;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    background-color: #210334;
+    position: relative;
+ }
+
+.header1{
+    font-size: 2em;
+}
+.header2{
+    font-size: 1.5em;
+}
+.header3{
+    font-size: 1.15em;
+}
+.header4{
+    font-size: 1em;
+}
+.header5{
+    font-size: .85em;
+}
+.header6{
+    font-size: .65em;
+}
+
+.header-container{
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:1;
+    padding: 10px 20px;
+    background: rgba( 8, 8, 8, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 15px );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px -6px #ccc;
+
+    .logo--container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            margin:0;
+        }
+        &--logo{
+            color:#fff;
+        }
+    } 
+    .btn--container{
+        ul {
+            display: flex;
+            padding: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            list-style-type: none;
+            padding: 10px;
+        }
+        
+        a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        a::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 3px;
+          background: #e155d9;
+          transition: width .4s ease-in;
+        }
+        
+        a:hover::after {
+          width: 100%;
+        }
+    }
+        
+}
+  
+
+.footer--container{
+    color:#fff;
+    height:200px;
+    background: rgba( 8, 8, 8, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 15px );
+    border-radius: 10px;
+
+    &--text{
+        text-align: center;
+        .sub--container{
+            color:#E700F6
+        }
+    }
+
+    &--contact{
+        margin:0 auto;
+        padding-top: 20px;
+        width:50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        i{  
+            padding:10px;
+            font-size:1.3rem;
+            background-color: #ffffff;
+            color:#210334;
+            border-radius: 200px 200px 200px 200px;
+            border: 1px solid #ffffff;
+            cursor:pointer;
+            transition: filter 0.5s;
+            
+            &:hover{
+                filter: drop-shadow(0px 0px 6px #E700F6);
+            }
+        }
+    }
+
+    &--copyright{
+        margin:20px auto;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+}
+
+.main--container{
+    display: flex;
+    padding:20px;
+    align-items: center;
+    .text--container{
+        width:50%; 
+        height:100%;
+        color:#fff;        
+    } 
+    .img--container{
+        width:50%;
+        img{
+            width:100%;
+            height:100%;
+        }
+    
+    }
+    .sub--container{
+        font-size: 3rem;
+        color:#efaaea;
+    }
+
+}
+.typeText{
+    font-size: 1.5rem;
+}
+.typed-text {
+    color: #efaaea;
+    font-family: var(--redressed);
+    filter: drop-shadow(4px 8px 4px #E700F6);
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 3px;
+    margin-left: 4px;
+    background: var(--teal);
+  }
+  
+  .cursor.blink {
+    animation: blink 0.8s ease-in-out infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      background: var(--teal);
+    }
+    40%, 50% {
+      background: transparent;
+    }
+  }
+.second--container{
+   text-align: center;
+   color:#fff;
+   .sub--container{
+        color:#E700F6;
+    }
+   .content--container{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    .text--container{
+        width:70%;
+        padding:5%;
+        text-align: justify;
+    }
+    .img-container{
+        width:30%;
+    }
+   }
+}
+    
+
